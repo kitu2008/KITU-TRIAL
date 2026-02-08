@@ -16,25 +16,25 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         :root {
-            --primary: #FF0000; /* YouTube Red */
-            --secondary: #FFCC00;
-            --dark: #0A0A0A;
-            --darker: #000000;
-            --light: #FFFFFF;
-            --discord: #5865F2;
-            --instagram: #E4405F;
-            --whatsapp: #25D366;
-            --neon: #00FF9D;
-            --basic: #4CAF50;
-            --pro: #2196F3;
-            --vip: #FF9800;
-            --pink: #FF69B4;
+            --primary: #1f3a93;
+            --secondary: #4b6ea9;
+            --dark: #1f2430;
+            --darker: #0f1116;
+            --light: #f5f6f8;
+            --discord: #3f56a6;
+            --instagram: #b04a6b;
+            --whatsapp: #2e8b57;
+            --neon: #9fb8e9;
+            --basic: #3c7a4b;
+            --pro: #2f6fb4;
+            --vip: #b4792a;
+            --pink: #d08aa7;
         }
 
         body {
-            background-color: var(--darker);
-            color: var(--light);
-            font-family: 'Poppins', sans-serif;
+            background-color: #e6e9ef;
+            color: #1a1d24;
+            font-family: "Georgia", "Times New Roman", serif;
             overflow-x: hidden;
         }
 
@@ -45,7 +45,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(45deg, #000000, #1a1a1a);
+            background: linear-gradient(135deg, #f0f2f6, #cfd6e3);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -60,28 +60,24 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .gg-text {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 8rem;
-            font-weight: 900;
-            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--neon));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
-            letter-spacing: 10px;
-            margin-bottom: 30px;
+            font-family: "Garamond", "Times New Roman", serif;
+            font-size: 7rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 8px;
+            margin-bottom: 20px;
             opacity: 0;
             transform: translateY(50px);
             animation: textReveal 2s ease-out forwards;
         }
 
         .empire-text {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 4rem;
-            font-weight: 700;
-            color: var(--light);
+            font-family: "Garamond", "Times New Roman", serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: #2b3140;
             text-transform: uppercase;
-            letter-spacing: 15px;
+            letter-spacing: 12px;
             opacity: 0;
             animation: fadeInUp 1s ease 2s forwards;
             position: relative;
@@ -95,7 +91,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             transform: translateX(-50%);
             width: 0;
             height: 4px;
-            background: var(--primary);
+            background: var(--secondary);
             animation: lineExpand 1.5s ease 3s forwards;
         }
 
@@ -154,7 +150,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             left: 0;
             width: 100%;
             height: 100vh;
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(230, 233, 239, 0.95);
             display: none;
             justify-content: center;
             align-items: center;
@@ -164,18 +160,16 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .welcome-popup-content {
-            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            background: linear-gradient(145deg, #f7f8fb, #dbe1ed);
             width: 90%;
             max-width: 500px;
-            border-radius: 25px;
+            border-radius: 18px;
             padding: 60px 40px;
             text-align: center;
             position: relative;
-            border: 3px solid transparent;
+            border: 2px solid #c2cadb;
             box-shadow: 
-                0 0 50px rgba(255, 105, 180, 0.5),
-                0 0 100px rgba(255, 0, 0, 0.3),
-                0 0 150px rgba(0, 255, 157, 0.2);
+                0 20px 50px rgba(31, 58, 147, 0.25);
             transform: scale(0.5) rotate(-15deg);
             transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             overflow: hidden;
@@ -188,7 +182,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, transparent, rgba(255, 105, 180, 0.1), transparent);
+            background: linear-gradient(45deg, transparent, rgba(79, 110, 169, 0.15), transparent);
             animation: gradientShift 3s linear infinite;
         }
 
@@ -357,7 +351,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         /* Heart Animation */
         .heart {
             position: absolute;
-            color: var(--pink);
+            color: var(--secondary);
             font-size: 20px;
             animation: floatHeart 3s linear infinite;
             opacity: 0;
@@ -379,7 +373,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             position: absolute;
             width: 20px;
             height: 20px;
-            background: var(--pink);
+            background: var(--secondary);
             border-radius: 50%;
             pointer-events: none;
             animation: explode 1s ease-out forwards;
@@ -403,7 +397,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             left: 0;
             width: 100%;
             height: 100vh;
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(227, 231, 238, 0.95);
             display: none;
             justify-content: center;
             align-items: center;
@@ -413,15 +407,15 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .popup-content {
-            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            background: #f7f8fb;
             width: 90%;
             max-width: 600px;
-            border-radius: 20px;
+            border-radius: 16px;
             padding: 40px;
             text-align: center;
             position: relative;
-            border: 2px solid var(--primary);
-            box-shadow: 0 0 50px rgba(255, 0, 0, 0.3);
+            border: 1px solid #c6cfdf;
+            box-shadow: 0 20px 40px rgba(31, 58, 147, 0.18);
             transform: scale(0.8);
             transition: transform 0.5s ease;
         }
@@ -431,25 +425,88 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .popup-header h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
-            color: var(--light);
+            font-family: "Garamond", "Times New Roman", serif;
+            font-size: 2.3rem;
+            color: var(--primary);
             margin-bottom: 15px;
             text-transform: uppercase;
         }
 
         .popup-header p {
-            color: #aaa;
+            color: #4d566b;
             font-size: 1.1rem;
             line-height: 1.6;
         }
 
+        .classic-login {
+            margin: 20px 0 30px;
+            padding: 20px;
+            border: 1px solid #c6cfdf;
+            border-radius: 12px;
+            background: #eef1f7;
+            text-align: left;
+        }
+
+        .classic-login h3 {
+            font-size: 1.4rem;
+            color: #2b3140;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .login-field {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+
+        .login-field label {
+            font-size: 0.95rem;
+            color: #3f4759;
+        }
+
+        .login-field input {
+            padding: 10px 12px;
+            border: 1px solid #b9c3d8;
+            border-radius: 6px;
+            background: #ffffff;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .login-field input:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(79, 110, 169, 0.2);
+        }
+
+        .login-hint {
+            font-size: 0.85rem;
+            color: #5b6476;
+            margin-bottom: 15px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
         .youtube-card {
-            background: rgba(255, 0, 0, 0.1);
-            border-radius: 15px;
+            background: #ffffff;
+            border-radius: 12px;
             padding: 30px;
             margin: 30px 0;
-            border: 1px solid rgba(255, 0, 0, 0.3);
+            border: 1px solid #d2d9e6;
             position: relative;
             overflow: hidden;
         }
@@ -465,7 +522,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .youtube-icon {
-            font-size: 4rem;
+            font-size: 3.5rem;
             color: var(--primary);
             margin-bottom: 20px;
             animation: pulse 2s infinite;
@@ -478,9 +535,9 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .channel-name {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.8rem;
-            color: var(--light);
+            font-family: "Garamond", "Times New Roman", serif;
+            font-size: 1.7rem;
+            color: #2b3140;
             margin-bottom: 20px;
         }
 
@@ -505,9 +562,9 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .subscribe-btn:hover {
-            background: #CC0000;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+            background: #243f9b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(31, 58, 147, 0.25);
         }
 
         .subscribe-btn::after {
@@ -530,21 +587,21 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             display: none;
             margin-top: 20px;
             padding: 20px;
-            background: rgba(0, 255, 157, 0.1);
+            background: #eef1f7;
             border-radius: 10px;
             animation: fadeIn 0.5s ease;
         }
 
         .countdown-text {
             font-size: 1.1rem;
-            color: var(--light);
+            color: #2b3140;
             margin-bottom: 10px;
         }
 
         #countdown {
-            font-family: 'Orbitron', sans-serif;
+            font-family: "Garamond", "Times New Roman", serif;
             font-size: 2rem;
-            color: var(--neon);
+            color: var(--primary);
             font-weight: 700;
         }
 
@@ -582,7 +639,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 50px rgba(255, 0, 0, 0.5);
+            box-shadow: 0 10px 25px rgba(31, 58, 147, 0.25);
             animation: rotate 20s linear infinite;
             position: relative;
             overflow: hidden;
@@ -608,7 +665,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             border-radius: 50%;
             z-index: -2;
             filter: blur(20px);
-            opacity: 0.7;
+            opacity: 0.35;
         }
 
         .dashboard-logo img {
@@ -638,20 +695,17 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 3.5rem;
-            background: linear-gradient(to right, var(--primary), var(--secondary), var(--neon));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            font-family: "Garamond", "Times New Roman", serif;
+            font-size: 3.2rem;
+            color: var(--primary);
             margin-bottom: 20px;
             text-transform: uppercase;
-            letter-spacing: 5px;
+            letter-spacing: 4px;
         }
 
         .subtitle {
-            font-size: 1.2rem;
-            color: #aaa;
+            font-size: 1.1rem;
+            color: #4d566b;
             max-width: 600px;
             margin: 0 auto 40px;
             line-height: 1.6;
@@ -666,21 +720,21 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         }
 
         .card {
-            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-            border-radius: 20px;
+            background: #ffffff;
+            border-radius: 16px;
             padding: 40px;
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid #d2d9e6;
             transition: all 0.3s ease;
             opacity: 0;
             transform: translateY(30px);
         }
 
         .card:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary);
-            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.1);
+            transform: translateY(-6px);
+            border-color: var(--secondary);
+            box-shadow: 0 20px 40px rgba(31, 58, 147, 0.12);
         }
 
         .card::before {
@@ -1132,6 +1186,20 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             <div class="popup-header">
                 <h2>WELCOME TO GG EMPIRE!</h2>
                 <p>To unlock the exclusive dashboard, please subscribe to our YouTube channel.</p>
+            </div>
+
+            <div class="classic-login">
+                <h3>Admin Login</h3>
+                <div class="login-field">
+                    <label for="adminUser">Username</label>
+                    <input type="text" id="adminUser" placeholder="Admin">
+                </div>
+                <div class="login-field">
+                    <label for="adminPass">Admin Pass</label>
+                    <input type="password" id="adminPass" placeholder="Enter admin password">
+                </div>
+                <p class="login-hint">Classic access requires the admin pass to continue.</p>
+                <button class="login-button" type="button">Sign In</button>
             </div>
             
             <div class="youtube-card">
